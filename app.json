@@ -29,13 +29,21 @@
     "name": "Rob Groenendijk",
     "email": "rogro82@gmail.com"
   },
+  "contributors": {
+    "translators": [
+        {
+            "name": "🇩🇪 - Markus Mahr"
+        }
+    ]
+},
   "flow": {
     "actions": [
       {
         "id": "send_notification",
         "title": {
           "en": "Send notification",
-          "nl": "Verstuur notificatie"
+          "nl": "Verstuur notificatie",
+          "de": "Versende Benachrichtigung"
         },
         "args": [
           {
@@ -46,7 +54,8 @@
             },
             "title": {
               "en": "IP-address",
-              "nl": "IP-adres"
+              "nl": "IP-adres",
+              "de":"IP-Adresse"
             }
           },
           {
@@ -54,11 +63,13 @@
             "type": "text",
             "placeholder": {
               "en": "Title of the notification",
-              "nl": "Titel van de notificatie"
+              "nl": "Titel van de notificatie",
+              "de": "Titel der Benachrichtigung"
             },
             "title": {
               "en": "Title",
-              "nl": "Titel"
+              "nl": "Titel",
+              "de": "Titel"
             }
           },
           {
@@ -66,11 +77,13 @@
             "type": "text",
             "placeholder": {
               "en": "Message of the notification",
-              "nl": "Bericht van de notificatie"
+              "nl": "Bericht van de notificatie",
+              "de": "Text der Benachrichtigung"
             },
             "title": {
               "en": "Message",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           },
           {
@@ -81,62 +94,71 @@
                 "id": "5",
                 "label": {
                   "en": "5 seconds",
-                  "nl": "5 seconden"
+                  "nl": "5 seconden",
+                  "de": "5 sekunden"
                 }
               },
               {
                 "id": "10",
                 "label": {
                   "en": "10 seconds",
-                  "nl": "10 seconden"
+                  "nl": "10 seconden",
+                  "de": "10 sekunden"
                 }
               },
               {
                 "id": "15",
                 "label": {
                   "en": "15 seconds",
-                  "nl": "15 seconden"
+                  "nl": "15 seconden",
+                  "de": "15 sekunden"
                 }
               },
               {
                 "id": "30",
                 "label": {
                   "en": "30 seconds",
-                  "nl": "30 seconden"
+                  "nl": "30 seconden",
+                  "de": "30 sekunden"
                 }
               },
               {
                 "id": "45",
                 "label": {
                   "en": "45 seconds",
-                  "nl": "45 seconden"
+                  "nl": "45 seconden",
+                  "de": "45 sekunden"
                 }
               },
               {
                 "id": "60",
                 "label": {
                   "en": "60 seconds",
-                  "nl": "60 seconden"
+                  "nl": "60 seconden",
+                  "de": "60 sekunden"
                 }
               },
               {
                 "id": "90",
                 "label": {
                   "en": "90 seconds",
-                  "nl": "90 seconden"
+                  "nl": "90 seconden",
+                  "de": "90 sekunden"
                 }
               },
               {
                 "id": "120",
                 "label": {
                   "en": "120 seconds",
-                  "nl": "120 seconden"
+                  "nl": "120 seconden",
+                  "de": "120 sekunden"
                 }
               }
             ],
             "title": {
               "en": "Duration",
-              "nl": "Tijd"
+              "nl": "Tijd",
+              "de": "dauer"
             }
           },
           {
@@ -147,7 +169,8 @@
                 "id": "0",
                 "label": {
                   "en": "default",
-                  "nl": "standaard"
+                  "nl": "standaard",
+                  "de": "standard"
                 }
               },
               {
@@ -183,7 +206,8 @@
             ],
             "title": {
               "en": "Transparency",
-              "nl": "Transparantie"
+              "nl": "Transparantie",
+              "de": "Transparenz"
             }
           },
           {
@@ -194,7 +218,8 @@
                 "id": "0",
                 "label": {
                   "en": "bottom-right",
-                  "nl": "rechts-onder"
+                  "nl": "rechts-onder",
+                  "de": "rechts-oben"
                 }
               },
               {
@@ -202,33 +227,38 @@
                 "label": {
                   "en": "bottom-left",
                   "nl": "links-onder"
+                  "de": "links-unten"
                 }
               },
               {
                 "id": "2",
                 "label": {
                   "en": "top-right",
-                  "nl": "rechts-boven"
+                  "nl": "rechts-boven",
+                  "de": "rechts-oben"
                 }
               },
               {
                 "id": "3",
                 "label": {
                   "en": "top-left",
-                  "nl": "links-boven"
+                  "nl": "links-boven",
+                  "de": "links-oben"
                 }
               },
               {
                 "id": "4",
                 "label": {
                   "en": "center",
-                  "nl": "midden"
+                  "nl": "midden",
+                  "de": "mittig"
                 }
               }
             ],
             "title": {
               "en": "Position",
-              "nl": "Positie"
+              "nl": "Positie",
+              "de": "Position"
             }
           },
           {
@@ -239,34 +269,39 @@
                 "id": "0",
                 "label": {
                   "en": "normal",
-                  "nl": "normaal"
+                  "nl": "normaal",
+                  "de": "Normal"
                 }
               },
               {
                 "id": "1",
                 "label": {
                   "en": "small",
-                  "nl": "klein"
+                  "nl": "klein",
+                  "de": "klein"
                 }
               },
               {
                 "id": "2",
                 "label": {
                   "en": "large",
-                  "nl": "groot"
+                  "nl": "groot",
+                  "de": "groß"
                 }
               },
               {
                 "id": "3",
                 "label": {
                   "en": "extra large",
-                  "nl": "extra groot"
+                  "nl": "extra groot",
+                  "de": "extra groß"
                 }
               }
             ],
             "title": {
               "en": "Fontsize",
-              "nl": "Tekstgrootte"
+              "nl": "Tekstgrootte",
+              "de": "Textgröße"
             }
           }
         ]
@@ -275,7 +310,8 @@
         "id": "send_image",
         "title": {
           "en": "Send notification with image",
-          "nl": "Verstuur notificatie met afbeelding"
+          "nl": "Verstuur notificatie met afbeelding",
+          "de": "Versende eine Benachrichtigung mit Bild"
         },
         "droptoken": "image",
         "args": [
@@ -287,7 +323,8 @@
             },
             "title": {
               "en": "IP-address",
-              "nl": "IP-adres"
+              "nl": "IP-adres",
+              "de": "IP-Adresse"
             }
           },
           {
@@ -295,11 +332,13 @@
             "type": "text",
             "placeholder": {
               "en": "Title of the notification",
-              "nl": "Titel van de notificatie"
+              "nl": "Titel van de notificatie",
+              "de": "Titel der Benachrichtigung"
             },
             "title": {
               "en": "Title",
-              "nl": "Titel"
+              "nl": "Titel",
+              "de": "Titel"
             }
           },
           {
@@ -307,11 +346,13 @@
             "type": "text",
             "placeholder": {
               "en": "Message of the notification",
-              "nl": "Bericht van de notificatie"
+              "nl": "Bericht van de notificatie",
+              "de": "Text der Benachrichtigung"
             },
             "title": {
               "en": "Message",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           },
           {
@@ -322,62 +363,71 @@
                 "id": "5",
                 "label": {
                   "en": "5 seconds",
-                  "nl": "5 seconden"
+                  "nl": "5 seconden",
+                  "de": "5 sekunden"
                 }
               },
               {
                 "id": "10",
                 "label": {
                   "en": "10 seconds",
-                  "nl": "10 seconden"
+                  "nl": "10 seconden",
+                  "de": "10 sekunden"
                 }
               },
               {
                 "id": "15",
                 "label": {
                   "en": "15 seconds",
-                  "nl": "15 seconden"
+                  "nl": "15 seconden",
+                  "de": "15 sekunden"
                 }
               },
               {
                 "id": "30",
                 "label": {
                   "en": "30 seconds",
-                  "nl": "30 seconden"
+                  "nl": "30 seconden",
+                  "de": "30 sekunden"
                 }
               },
               {
                 "id": "45",
                 "label": {
                   "en": "45 seconds",
-                  "nl": "45 seconden"
+                  "nl": "45 seconden",
+                  "de": "45 sekunden"
                 }
               },
               {
                 "id": "60",
                 "label": {
                   "en": "60 seconds",
-                  "nl": "60 seconden"
+                  "nl": "60 seconden",
+                  "de": "60 sekunden"
                 }
               },
               {
                 "id": "90",
                 "label": {
                   "en": "90 seconds",
-                  "nl": "90 seconden"
+                  "nl": "90 seconden",
+                  "de": "90 sekunden"
                 }
               },
               {
                 "id": "120",
                 "label": {
                   "en": "120 seconds",
-                  "nl": "120 seconden"
+                  "nl": "120 seconden",
+                  "de": "120 sekunden"
                 }
               }
             ],
             "title": {
               "en": "Duration",
-              "nl": "Tijd"
+              "nl": "Tijd",
+              "de": "Dauer"
             }
           },
           {
@@ -388,7 +438,8 @@
                 "id": "0",
                 "label": {
                   "en": "default",
-                  "nl": "standaard"
+                  "nl": "standaard",
+                  "de": "standard"
                 }
               },
               {
@@ -424,7 +475,8 @@
             ],
             "title": {
               "en": "Transparency",
-              "nl": "Transparantie"
+              "nl": "Transparantie",
+              "de": "Transparenz"
             }
           },
           {
@@ -435,41 +487,47 @@
                 "id": "0",
                 "label": {
                   "en": "bottom-right",
-                  "nl": "rechts-onder"
+                  "nl": "rechts-onder",
+                  "de": "rechts-unten"
                 }
               },
               {
                 "id": "1",
                 "label": {
                   "en": "bottom-left",
-                  "nl": "links-onder"
+                  "nl": "links-onder",
+                  "de": "links-unten"
                 }
               },
               {
                 "id": "2",
                 "label": {
                   "en": "top-right",
-                  "nl": "rechts-boven"
+                  "nl": "rechts-boven",
+                  "de": "rechts-oben"
                 }
               },
               {
                 "id": "3",
                 "label": {
                   "en": "top-left",
-                  "nl": "links-boven"
+                  "nl": "links-boven",
+                  "de": "links-oben"
                 }
               },
               {
                 "id": "4",
                 "label": {
                   "en": "center",
-                  "nl": "midden"
+                  "nl": "midden",
+                  "de": "mittig"
                 }
               }
             ],
             "title": {
               "en": "Position",
-              "nl": "Positie"
+              "nl": "Positie",
+              "de": "Position"
             }
           },
           {
@@ -480,34 +538,39 @@
                 "id": "0",
                 "label": {
                   "en": "normal",
-                  "nl": "normaal"
+                  "nl": "normaal",
+                  "de": "normal"
                 }
               },
               {
                 "id": "1",
                 "label": {
                   "en": "small",
-                  "nl": "klein"
+                  "nl": "klein",
+                  "de": "klein"
                 }
               },
               {
                 "id": "2",
                 "label": {
                   "en": "large",
-                  "nl": "groot"
+                  "nl": "groot",
+                  "de": "groß"
                 }
               },
               {
                 "id": "3",
                 "label": {
                   "en": "extra large",
-                  "nl": "extra groot"
+                  "nl": "extra groot",
+                  "de": "extra groß"
                 }
               }
             ],
             "title": {
               "en": "Fontsize",
-              "nl": "Tekstgrootte"
+              "nl": "Tekstgrootte",
+              "de": "Textgröße"
             }
           }
         ]
