@@ -1,0 +1,517 @@
+{
+  "id": "nl.rogro82.nfatv",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Notifications for Android TV"
+  },
+  "description": {
+    "nl": "Verstuur notificaties naar Android TV",
+    "en": "Send notifications to your Android TV"
+  },
+  "category": [
+    "tools"
+  ],
+  "tags": {
+    "en": [
+      "android",
+      "tv",
+      "notifications"
+    ]
+  },
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Rob Groenendijk",
+    "email": "rogro82@gmail.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "send_notification",
+        "title": {
+          "en": "Send notification",
+          "nl": "Verstuur notificatie"
+        },
+        "args": [
+          {
+            "name": "host",
+            "type": "text",
+            "placeholder": {
+              "en": "xxx.xxx.xxx.xxx"
+            },
+            "title": {
+              "en": "IP-address",
+              "nl": "IP-adres"
+            }
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "placeholder": {
+              "en": "Title of the notification",
+              "nl": "Titel van de notificatie"
+            },
+            "title": {
+              "en": "Title",
+              "nl": "Titel"
+            }
+          },
+          {
+            "name": "message",
+            "type": "text",
+            "placeholder": {
+              "en": "Message of the notification",
+              "nl": "Bericht van de notificatie"
+            },
+            "title": {
+              "en": "Message",
+              "nl": "Bericht"
+            }
+          },
+          {
+            "name": "time",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "5",
+                "label": {
+                  "en": "5 seconds",
+                  "nl": "5 seconden"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "10 seconds",
+                  "nl": "10 seconden"
+                }
+              },
+              {
+                "id": "15",
+                "label": {
+                  "en": "15 seconds",
+                  "nl": "15 seconden"
+                }
+              },
+              {
+                "id": "30",
+                "label": {
+                  "en": "30 seconds",
+                  "nl": "30 seconden"
+                }
+              },
+              {
+                "id": "45",
+                "label": {
+                  "en": "45 seconds",
+                  "nl": "45 seconden"
+                }
+              },
+              {
+                "id": "60",
+                "label": {
+                  "en": "60 seconds",
+                  "nl": "60 seconden"
+                }
+              },
+              {
+                "id": "90",
+                "label": {
+                  "en": "90 seconds",
+                  "nl": "90 seconden"
+                }
+              },
+              {
+                "id": "120",
+                "label": {
+                  "en": "120 seconds",
+                  "nl": "120 seconden"
+                }
+              }
+            ],
+            "title": {
+              "en": "Duration",
+              "nl": "Tijd"
+            }
+          },
+          {
+            "name": "transparency",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "default",
+                  "nl": "standaard"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "0%"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "25%"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "50%"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "75%"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "100%"
+                }
+              }
+            ],
+            "title": {
+              "en": "Transparency",
+              "nl": "Transparantie"
+            }
+          },
+          {
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "bottom-right",
+                  "nl": "rechts-onder"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "bottom-left",
+                  "nl": "links-onder"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "top-right",
+                  "nl": "rechts-boven"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "top-left",
+                  "nl": "links-boven"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "center",
+                  "nl": "midden"
+                }
+              }
+            ],
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            }
+          },
+          {
+            "name": "fontsize",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "normal",
+                  "nl": "normaal"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "small",
+                  "nl": "klein"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "large",
+                  "nl": "groot"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "extra large",
+                  "nl": "extra groot"
+                }
+              }
+            ],
+            "title": {
+              "en": "Fontsize",
+              "nl": "Tekstgrootte"
+            }
+          }
+        ]
+      },
+      {
+        "id": "send_image",
+        "title": {
+          "en": "Send notification with image",
+          "nl": "Verstuur notificatie met afbeelding"
+        },
+        "droptoken": "image",
+        "args": [
+          {
+            "name": "host",
+            "type": "text",
+            "placeholder": {
+              "en": "xxx.xxx.xxx.xxx"
+            },
+            "title": {
+              "en": "IP-address",
+              "nl": "IP-adres"
+            }
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "placeholder": {
+              "en": "Title of the notification",
+              "nl": "Titel van de notificatie"
+            },
+            "title": {
+              "en": "Title",
+              "nl": "Titel"
+            }
+          },
+          {
+            "name": "message",
+            "type": "text",
+            "placeholder": {
+              "en": "Message of the notification",
+              "nl": "Bericht van de notificatie"
+            },
+            "title": {
+              "en": "Message",
+              "nl": "Bericht"
+            }
+          },
+          {
+            "name": "time",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "5",
+                "label": {
+                  "en": "5 seconds",
+                  "nl": "5 seconden"
+                }
+              },
+              {
+                "id": "10",
+                "label": {
+                  "en": "10 seconds",
+                  "nl": "10 seconden"
+                }
+              },
+              {
+                "id": "15",
+                "label": {
+                  "en": "15 seconds",
+                  "nl": "15 seconden"
+                }
+              },
+              {
+                "id": "30",
+                "label": {
+                  "en": "30 seconds",
+                  "nl": "30 seconden"
+                }
+              },
+              {
+                "id": "45",
+                "label": {
+                  "en": "45 seconds",
+                  "nl": "45 seconden"
+                }
+              },
+              {
+                "id": "60",
+                "label": {
+                  "en": "60 seconds",
+                  "nl": "60 seconden"
+                }
+              },
+              {
+                "id": "90",
+                "label": {
+                  "en": "90 seconds",
+                  "nl": "90 seconden"
+                }
+              },
+              {
+                "id": "120",
+                "label": {
+                  "en": "120 seconds",
+                  "nl": "120 seconden"
+                }
+              }
+            ],
+            "title": {
+              "en": "Duration",
+              "nl": "Tijd"
+            }
+          },
+          {
+            "name": "transparency",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "default",
+                  "nl": "standaard"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "0%"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "25%"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "50%"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "75%"
+                }
+              },
+              {
+                "id": "5",
+                "label": {
+                  "en": "100%"
+                }
+              }
+            ],
+            "title": {
+              "en": "Transparency",
+              "nl": "Transparantie"
+            }
+          },
+          {
+            "name": "position",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "bottom-right",
+                  "nl": "rechts-onder"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "bottom-left",
+                  "nl": "links-onder"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "top-right",
+                  "nl": "rechts-boven"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "top-left",
+                  "nl": "links-boven"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "center",
+                  "nl": "midden"
+                }
+              }
+            ],
+            "title": {
+              "en": "Position",
+              "nl": "Positie"
+            }
+          },
+          {
+            "name": "fontsize",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "0",
+                "label": {
+                  "en": "normal",
+                  "nl": "normaal"
+                }
+              },
+              {
+                "id": "1",
+                "label": {
+                  "en": "small",
+                  "nl": "klein"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "large",
+                  "nl": "groot"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "extra large",
+                  "nl": "extra groot"
+                }
+              }
+            ],
+            "title": {
+              "en": "Fontsize",
+              "nl": "Tekstgrootte"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
